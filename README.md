@@ -1,4 +1,6 @@
 # imdbbot
 A simple bot for IMDB
 
-For using this script you need to download the chromedriver.exe!!!
+## Deploy to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Soebb/imdbbot)
