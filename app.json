@@ -1,0 +1,37 @@
+{
+  "name": "IMDB Bot",
+  "description": "A Telegram bot to fetch movies details.",
+  "env": {
+    "TOKEN": {
+      "description": "Enter bot token.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal.",
+      "value": ""
+    },
+    "GOOGLE_CHROME_BIN": {
+      "description": "Don't edit this",
+      "value": "/app/.apt/usr/bin/google-chrome"
+    },
+    "CHROMEDRIVER_PATH": {
+      "description": "Don't edit this",
+      "value": "/app/.chromedriver/bin/chromedriver"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-google-chrome"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-chromedriver"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
