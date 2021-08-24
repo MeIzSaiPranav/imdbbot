@@ -20,7 +20,7 @@ xbot = Client(
     'ImdbBot',
     api_id=APP_ID,
     api_hash=API_HASH,
-    bot_token=TOKEN
+    bot_token=BOT_TOKEN
 )
 
 @xbot.on_message(filters.command('start') & filters.private)
