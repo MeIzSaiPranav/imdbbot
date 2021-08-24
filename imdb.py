@@ -13,7 +13,7 @@ import os
 
 API_HASH = os.environ['API_HASH'] # Api hash
 APP_ID = int(os.environ['APP_ID']) # Api id/App id
-BOT_TOKEN = os.environ['BOT_TOKEN'] # Bot token
+BOT_TOKEN = os.environ['TOKEN'] # Bot token
 
 # Running bot
 xbot = Client(
