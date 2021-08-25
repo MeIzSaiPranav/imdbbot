@@ -38,8 +38,8 @@ async def fetch(bot, message):
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
-    chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-    browser = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
+    chrome_options.binary_location = "/app/.apt/usr/bin/google-chrome"
+    browser = webdriver.Chrome(executable_path="/app/.chromedriver/bin/chromedriver", options=chrome_options)
     browser.get(url) 
     browser.find_element_by_xpath('//*[@id="main"]/div/div[2]/table/tbody/tr[1]/td[1]').click()
     rate = browser.find_element_by_xpath('//*[@id="__next"]/main/div/section[1]/section/div[3]/section/section/div[1]/div[2]/div/div[1]/a/div/div/div[2]/div[1]/span[1]')
